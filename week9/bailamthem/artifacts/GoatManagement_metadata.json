@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.28+commit.7893614a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"week9/bailamthem/bai1.sol": "GoatManagement"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"week9/bailamthem/bai1.sol": {
+			"keccak256": "0x5a71ee048c4ea7232b7ae57fcd38ce5aaf5d75a0e8de37c6ba4adb56bed514ad",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://06a9fefda27982c8f2fe8f90078f7e294a10322c3fcc0ed3a16744968a995a3b",
+				"dweb:/ipfs/QmVEGM1EJHoJNBzC6dUhntZxV57SvfEjKtbXkgsNhdF2FP"
+			]
+		}
+	},
+	"version": 1
+}
