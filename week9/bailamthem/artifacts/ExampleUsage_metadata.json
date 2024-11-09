@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.28+commit.7893614a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "goatManagementAddress",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "addNewbornGoat",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"week9/bailamthem/goat_seed.sol": "ExampleUsage"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"week9/bailamthem/HealthManagement.sol": {
+			"keccak256": "0x03e6c94991d865dee85a47d21bfe0c4143ff6d381be7c87e77c3f636d327975a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b0897001dcf11c4952a7c8f2e98be8e2eccfdaf1ac32cc605ea26c0f72a937fe",
+				"dweb:/ipfs/QmPoPzhgLQswXNZP4ri3AHXU68624RZmKjd9Nbft95muyj"
+			]
+		},
+		"week9/bailamthem/goat_seed.sol": {
+			"keccak256": "0x25e1a4ec6cb6b563d074613c2f3f169266a1c741ba9c173c2133c01e00b6eea8",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0b4c978d88c60a0587da431d51700af44dbc329198d3f3cef7702fd007a862b5",
+				"dweb:/ipfs/QmPHYZfUQLsbzXrU8EvcEZBMvv4aPrrLySquDUQ4XBoWzy"
+			]
+		}
+	},
+	"version": 1
+}

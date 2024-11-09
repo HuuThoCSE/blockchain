@@ -4,7 +4,279 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [],
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "gasUsed",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "bytes32",
+						"name": "txHash",
+						"type": "bytes32"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "blockNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "TransactionDetails",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_code",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_age",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_weight",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_breed",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_healthStatus",
+						"type": "string"
+					}
+				],
+				"name": "addGoat",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_goatId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_productType",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_quantity",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_harvresDate",
+						"type": "string"
+					}
+				],
+				"name": "addProduct",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_goatId",
+						"type": "uint256"
+					}
+				],
+				"name": "calculateFeedCost",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "goatProducts",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "productType",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "quantity",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "harvestDate",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "goats",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "code",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "age",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "weight",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum GoatManagement.Breed",
+						"name": "breed",
+						"type": "uint8"
+					},
+					{
+						"internalType": "string",
+						"name": "healthStatus",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "healthHistory",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "date",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "healthStatus",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "treatment",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "nextGoatId",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalMonthlyFeedCost",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_goatId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_date",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_healthStatus",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_treatment",
+						"type": "string"
+					}
+				],
+				"name": "updateHealth",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -18,7 +290,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"week9/bailamthem/bai1.sol": "GoatManagement"
+			"week9/bailamthem/HealthManagement.sol": "GoatManagement"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -32,12 +304,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"week9/bailamthem/bai1.sol": {
-			"keccak256": "0x5a71ee048c4ea7232b7ae57fcd38ce5aaf5d75a0e8de37c6ba4adb56bed514ad",
+		"week9/bailamthem/HealthManagement.sol": {
+			"keccak256": "0x9d7efb2351ffa25c4273f27dbdc9c8fcec8ff2e6d309a38e04bc72025d59acd8",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://06a9fefda27982c8f2fe8f90078f7e294a10322c3fcc0ed3a16744968a995a3b",
-				"dweb:/ipfs/QmVEGM1EJHoJNBzC6dUhntZxV57SvfEjKtbXkgsNhdF2FP"
+				"bzz-raw://a6253b728bc4eb2ff6960d42b4f97f5cdb4449fcee008549f8240d1bdb7809b9",
+				"dweb:/ipfs/QmRwmWmqiMLsTSyH96Bc6dfyjL3p2QQ6uz5Z6gdFAEUBFG"
 			]
 		}
 	},
