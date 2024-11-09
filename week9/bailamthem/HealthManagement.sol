@@ -78,6 +78,11 @@ contract GoatManagement {
         string memory _artificialBreed
     ) public {
         Breed breedValue = getEnumValue(_breed); // Chuyển chuỗi thành giá trị enum
+
+        // Kiểm tra giá trị mặc định
+        string memory noteValue = bytes(_note).length > 0 ? _note : "No additional notes";
+        string memory artificialBreedValue = bytes(_artificialBreed).length > 0 ? _artificialBreed : "N/A";
+
         goats[nextGoatId] = Goat(
             nextGoatId, 
             _code, 
@@ -89,8 +94,8 @@ contract GoatManagement {
             _matingType,
             _parent1Id,
             _parent2Id,
-            _note,
-            _artificialBreed
+            noteValue,
+            artificialBreedValue
         ); // Lưu thời gian hiện tại
         
         nextGoatId++;
