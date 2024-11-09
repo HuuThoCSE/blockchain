@@ -56,6 +56,36 @@
 						"internalType": "string",
 						"name": "_healthStatus",
 						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "isBornInFarm",
+						"type": "bool"
+					},
+					{
+						"internalType": "enum GoatManagement.MatingType",
+						"name": "_matingType",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_parent1Id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_parent2Id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_note",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_artificialBreed",
+						"type": "string"
 					}
 				],
 				"name": "addGoat",
@@ -183,6 +213,36 @@
 						"internalType": "string",
 						"name": "healthStatus",
 						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "isBornInFarm",
+						"type": "bool"
+					},
+					{
+						"internalType": "enum GoatManagement.MatingType",
+						"name": "mattingType",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint256",
+						"name": "parent1Id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "parent2Id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "note",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "artificialBreed",
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -305,11 +365,11 @@
 	},
 	"sources": {
 		"week9/bailamthem/HealthManagement.sol": {
-			"keccak256": "0x9d7efb2351ffa25c4273f27dbdc9c8fcec8ff2e6d309a38e04bc72025d59acd8",
+			"keccak256": "0xfd3b9508be5aa580b22f537fc0bbf298881281f6300ecc5e894a642375884512",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://a6253b728bc4eb2ff6960d42b4f97f5cdb4449fcee008549f8240d1bdb7809b9",
-				"dweb:/ipfs/QmRwmWmqiMLsTSyH96Bc6dfyjL3p2QQ6uz5Z6gdFAEUBFG"
+				"bzz-raw://4dc1ae3421f8daf199a0956ef091244028ee4621f073200d5efb11a941470a25",
+				"dweb:/ipfs/QmWbj5EVppChJHJi1Y69mcRHnfrD7qxhrm2D2B75YQGiou"
 			]
 		}
 	},

@@ -10,6 +10,9 @@ contract GoatManagement {
     // Định nghĩa các loại giống dê
     enum Breed { Local, BachThao, Boer }
 
+    // Định nghĩa các loại giao phối
+    enum MatingType { Internal, External, Artificial }
+
     struct Goat {
         uint id;
         string code;
@@ -17,6 +20,12 @@ contract GoatManagement {
         uint weight;
         Breed breed; // Loại giống
         string healthStatus;
+        bool isBornInFarm;
+        MatingType mattingType; // Loại giao phối
+        uint parent1Id; // ID của dê cha (nếu có)
+        uint parent2Id; // ID của dê mẹ (nếu có)
+        string note; // Ghi chú thêm
+        string artificialBreed; // Giống dê trong thụ tinh nhân tạo (nếu có)
     }
 
     struct HealthRecord {
@@ -55,9 +64,35 @@ contract GoatManagement {
     // Ex: "G002", 0, 155, Local
 
     // Thêm dê mới vào đàn với thời điểm hiện tại
-    function addGoat(string memory _code, uint _age, uint _weight, string memory _breed, string memory _healthStatus) public {
+    function addGoat(
+        string memory _code, 
+        uint _age, 
+        uint _weight, 
+        string memory _breed, 
+        string memory _healthStatus,
+        bool isBornInFarm,
+        MatingType _matingType,
+        uint _parent1Id,
+        uint _parent2Id,
+        string memory _note,
+        string memory _artificialBreed
+    ) public {
         Breed breedValue = getEnumValue(_breed); // Chuyển chuỗi thành giá trị enum
-        goats[nextGoatId] = Goat(nextGoatId, _code, _age, _weight, breedValue, _healthStatus); // Lưu thời gian hiện tại
+        goats[nextGoatId] = Goat(
+            nextGoatId, 
+            _code, 
+            _age, 
+            _weight, 
+            breedValue, 
+            _healthStatus,
+            isBornInFarm,
+            _matingType,
+            _parent1Id,
+            _parent2Id,
+            _note,
+            _artificialBreed
+        ); // Lưu thời gian hiện tại
+        
         nextGoatId++;
 
         emit TransactionDetails(tx.gasprice, blockhash(block.number - 1), block.number);
@@ -97,4 +132,14 @@ contract GoatManagement {
         }
         return totalCost;
     }
+
+    // Giao phối trong chuồng:
+    // addGoat("G127", 0, 10, "Boer", "Healthy", true, MatingType.Internal, 1, 2, "No special note", "");
+
+    // Giao phối với giống ngoài:
+    // addGoat("G128", 0, 12, "Native", "Healthy", true, MatingType.External, 0, 0, "Imported from another farm", "");
+
+    // Phối nhân tạo với giống ngoài:
+    // addGoat("G129", 0, 11, "BachThao", "Healthy", true, MatingType.Artificial, 0, 0, "Artificial insemination with Boer breed", "Boer");
+
 }
