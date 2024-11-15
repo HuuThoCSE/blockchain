@@ -7,9 +7,9 @@
 # Tải file clone ubuntu
 Mật khẩu: 1
 
-Dùng lệnh này trước
+Dùng lệnh này trước, sau khi vào được ubuntu
 ```
-sudo apt update && sudo apt upgrade -y
+sudo apt update
 ```
 
 [Tải clone ubuntu - 1](https://files.fm/f/uv3pae7762)
