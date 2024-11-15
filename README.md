@@ -6,3 +6,5 @@
 
 # Tải file clone ubuntu
 Mật khẩu: 1
+
+[Tải clone ubuntu](https://files.fm/f/uv3pae7762)
