@@ -1,0 +1,68 @@
+name: "fabric-network"
+version: "1.0.0"
+client:
+  organization: Org1
+  connection:
+    timeout:
+      peer:
+        endorser: "300"
+
+channels:
+  mychannel:
+    orderers:
+      - orderer.example.com
+    peers:
+      peer0.org1.example.com:
+        endorsingPeer: true
+        chaincodeQuery: true
+        ledgerQuery: true
+        eventSource: true
+
+organizations:
+  Org1:
+    mspid: Org1MSP
+    cryptoPath: D:/test/test_3/hyperledger_fabric_sdk/crypto-config/peerOrganizations/org1.example.com/msp
+    peers:
+      - peer0.org1.example.com
+    certificateAuthorities:
+      - ca.org1.example.com
+    adminPrivateKey:
+      path: D:/test/test_3/hyperledger_fabric_sdk/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/c372b590c0bf6bb45e481698566925cf50fad45b76fbc075acae1bb2370df607_sk
+    signedCert:
+      path: D:/test/test_3/hyperledger_fabric_sdk/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/cert.pem
+
+orderers:
+  orderer.example.com:
+    url: grpcs://org1.example.com:7050
+    grpcOptions:
+      ssl-target-name-override: orderer.example.com
+    tlsCACerts:
+      path: D:/test/test_3/hyperledger_fabric_sdk/crypto-config/ordererOrganizations/example.com/tlsca/tlsca.example.com-cert.pem
+
+peers:
+  peer0.org1.example.com:
+    url: grpcs://org1.example.com:7051
+    grpcOptions:
+      ssl-target-name-override: peer0.org1.example.com
+    tlsCACerts:
+      path: D:/test/test_3/hyperledger_fabric_sdk/crypto-config/peerOrganizations/org1.example.com/tlsca/tlsca.org1.example.com-cert.pem
+
+  peer0.org2.example.com:
+    url: grpcs://org2.example.com:9051
+    grpcOptions:
+      ssl-target-name-override: peer0.org2.example.com
+    tlsCACerts:
+      path: D:/test/test_3/hyperledger_fabric_sdk/crypto-config/peerOrganizations/org2.example.com/tlsca/tlsca.org2.example.com-cert.pem
+
+
+certificateAuthorities:
+  ca.org1.example.com:
+    url: https://org1.example.com:7054
+    caName: ca-org1
+    httpOptions:
+      verify: false
+    registrar:
+      enrollId: admin
+      enrollSecret: adminpw
+    tlsCACerts:
+      path: D:/test/test_3/hyperledger_fabric_sdk/crypto-config/peerOrganizations/org1.example.com/tlsca/tlsca.org1.example.com-cert.pem
