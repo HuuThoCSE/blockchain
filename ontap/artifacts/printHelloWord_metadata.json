@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.28+commit.7893614a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"ontap/baitap1.sol": "printHelloWord"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"ontap/baitap1.sol": {
+			"keccak256": "0x2b5806deb8c1d3a87c32739b89d948bd492d7f74c6f4fa07142c1ed39aab7556",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6d0b6add41a1ce3fcad3d12aa5e4f87d59a13d8384d83330f04688093020782d",
+				"dweb:/ipfs/QmevYgkRhvJCNxKYhreAMNfEMcqQPTkLoFHcnuFu8wVuc2"
+			]
+		}
+	},
+	"version": 1
+}

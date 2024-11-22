@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.28+commit.7893614a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getMessage",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"ontap/baitap1.sol": "HelloWorld"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"ontap/baitap1.sol": {
+			"keccak256": "0x11b89d8e8258d50618f79088466cf77c7f7d1f1782d69f76380c60a86492d689",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4fdeb22c158302118974a2b342ddb6390f3a447cb2816232d85445eb8364f242",
+				"dweb:/ipfs/QmSUnRSfgQCoPkwmzbqtioK6KeEKc7nBnP5v663VG7EQhH"
+			]
+		}
+	},
+	"version": 1
+}
