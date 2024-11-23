@@ -1,0 +1,174 @@
+{
+	"compiler": {
+		"version": "0.8.28+commit.7893614a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "maSP",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "tenSP",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "SLSP",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "DGSP",
+						"type": "uint256"
+					}
+				],
+				"name": "SPThem",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "DSSanpham",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "MaSP",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "TenSP",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "SLSP",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "DGSP",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "InDSSanpham",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "MaSP",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "TenSP",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "SLSP",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "DGSP",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct QLSanpham.Sanpham[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_maSP",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_tenSP",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_SLSP",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_DGSP",
+						"type": "uint256"
+					}
+				],
+				"name": "ThemSP",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"ontap/exam_test1.sol": "QLSanpham"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"ontap/exam_test1.sol": {
+			"keccak256": "0xe164d1adb5f9e40915e86abfee4ed2dc977ee6e56664bb2079e43a07696e6f32",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://bb37f43e7ccfb370c4905895ef49e63e89db7e83545b50ab550675306c4f0f89",
+				"dweb:/ipfs/QmQtjRPS8ZMDWZ1ELTa9kSU1piNNkj2kyU3EG6gYaDxD19"
+			]
+		}
+	},
+	"version": 1
+}

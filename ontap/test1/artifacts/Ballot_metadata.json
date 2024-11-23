@@ -1,0 +1,172 @@
+{
+	"compiler": {
+		"version": "0.8.28+commit.7893614a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "findMax",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getNums",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "num1",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "num2",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "num3",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_num1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_num2",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_num3",
+						"type": "uint256"
+					}
+				],
+				"name": "setNumbers",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"ontap/test1/3_ballot.sol": "Ballot"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"/ontap/test1/1_storage.sol": {
+			"keccak256": "0xa3b57723208fc76b8560723296f5641f7fee2115d8d2f45d6d775f6d5890658d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://81ab72b43d9bc18a29a33c8b0e1e416ce48a2ad68e1e080a9260d25b2b7ee1fc",
+				"dweb:/ipfs/QmcAmSxP118WTT6MT7URXYFNEzu4aEoJDkT2erNjDdTJDp"
+			]
+		},
+		"/ontap/test1/2_owner.sol": {
+			"keccak256": "0x2c5c1dc1d70142d5f32860412bf417f1b7b0cc14981958e500d04b410a0a2e86",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8a88fec6603b134a7c61ab0c1eb0db36b4887df13c943f30818ea94eb114adb3",
+				"dweb:/ipfs/QmaU2yQ3HUXz5HFXaXWMjqpvQafK9n1pvJAkANrzwcUBAS"
+			]
+		},
+		"ontap/test1/3_ballot.sol": {
+			"keccak256": "0x753f7e09620489b8ae1dd2440e76ec4d61a3a50a22e4132143d9cfc79b488247",
+			"urls": [
+				"bzz-raw://6de5f6911e45528465af45f4d61ac89215228e839604d52a1a422f957ef92969",
+				"dweb:/ipfs/QmW4AeQrNrpU2DaWwoYXAS9r6CnpgxiYVppsR4xBNmDCLb"
+			]
+		}
+	},
+	"version": 1
+}

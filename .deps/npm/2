@@ -1,0 +1,8 @@
+/**
+ * Minified by jsDelivr using Terser v3.14.1.
+ * Original file: /npm/2@3.0.0/index.js
+ * 
+ * Do NOT use SRI with dynamically generated files! More information: https://www.jsdelivr.com/using-sri-with-dynamic-files
+ */
+"use strict";const toArray=require("./array"),toIterator=require("./iterator"),toMap=require("./map"),toNumber=require("./number"),toObject=require("./object"),toStr=require("./string");module.exports={toArray:toArray,toIterator:toIterator,toMap:toMap,toNumber:toNumber,toObject:toObject,toString:toStr,toStr:toStr};
+//# sourceMappingURL=/sm/e8b3aec331169b891202e913a88ba21657647d737603a085bfe5a3a1969978c5.map
